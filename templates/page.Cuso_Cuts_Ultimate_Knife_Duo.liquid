@@ -1,0 +1,1945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />    
+</head>
+<body>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+    body{
+      font-family: "Neuzeit Office", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden!important;
+      }
+
+    h1, h2, h3, h4, h5, h6{
+      font-family: "Neuzeit Office Soft Rounded", sans-serif;
+    }
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .saleThemeBtn{
+            font-family: "Neuzeit Office", sans-serif;
+            display: inline-block;
+            text-decoration: none;
+            padding: 7px 47px;
+            background-color: #CC2000;
+            border-radius: 4px;
+            font-size: 24px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #fff;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+        .saleThemeBtn:hover{
+            background-color: #ac1c25;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+        .mainBannerBlock{
+            background-color: #000000;
+            padding: 288px 0px 224px;
+            position: relative;
+            background-image: url('https://cdn.shopify.com/s/files/1/0589/2125/5095/files/bannerBgLayer.png?v=1674564063');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .bannerTxt{
+            max-width: 65%;
+        }
+        .bannerTxt h3{
+            font-size: 24px;
+            color: #fff;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+        .bannerTxt h1{
+            font-size: 97px;
+            color: #fff;
+            font-weight: 700;
+            font-style: italic;
+            margin-bottom: 0px;
+            text-transform: uppercase;
+        }
+        .bannerTxt h2{
+            font-size: 97px;
+            color: #CF2001;
+            font-weight: 700;
+            font-style: italic;
+            margin-bottom: 0px;
+            text-transform: uppercase;
+            line-height: 79px;
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .bannerTxt h2 span{
+            font-size: 43px;
+            color: #FFFFFF;
+            font-weight: 400;
+            display: inline-flex;
+            align-items: flex-start;
+            line-height: 42px;
+        }
+        .bannerTxt p{
+            font-size: 24px;
+            color: #fff;
+            font-weight: 300;
+            margin-bottom: 70px;
+        }
+        .bannerImgBlock{
+            width: 708.12px;
+            height: 100%;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+        .bannerImgBlock img{
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Clients */
+
+        .clientsBlock{
+            background-color: #F3F3F3;
+            padding: 50px 0px;
+        }
+        .clientFlexBox{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .chientItemBox{
+            width: 100.56px;
+            height: 46.67px;
+            text-align: center;
+        }
+        .chientItemBox img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        /* Serving Block */
+
+        .servingBlock{
+            background-color: #000000;
+            padding: 73px 0px 75px;
+            position: relative;
+            background-image: url('https://cdn.shopify.com/s/files/1/0589/2125/5095/files/bannerBgLayer.png?v=1674564063');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            overflow-x: hidden;
+        }
+        .sectionMianTitleTxt h5{
+            font-size: 36px;
+            color: #CC2000;
+            font-weight: 500;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        .sectionMianTitleTxt h2{
+            font-size: 52px;
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+        .sectionMianTitleTxt h2 span{
+            color: #CC2000;
+        }
+        .mainContactBlock p{
+            font-size: 26px;
+            color: #fff;
+            margin-bottom: 26px;
+            font-weight: 200;
+        }
+        .mainContactBlock h6{
+            font-size: 26px;
+            color: #fff;
+            margin-bottom: 0px;
+            font-weight: 500;
+        }
+        .sectionMianTitleTxt{
+            max-width: 52%;
+        }
+        .mainContactBlock{
+            max-height: 520px;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+        .mainContactBlock::-webkit-scrollbar {
+            width: 5px;
+        }
+        .mainContactBlock::-webkit-scrollbar-track {
+            background: #fff; 
+        }
+        .mainContactBlock::-webkit-scrollbar-thumb {
+            background: #CC2000; 
+        }
+        .ctmSliderBlock{
+            width: 906px;
+            position: absolute;
+            top: 50%;
+            right: -160px;
+            transform: translate(0%, -50%);
+        }
+        .sideItemBlock{
+            width: 100%;
+            height: 452px;
+            border-radius: 6px;
+            overflow: hidden;
+            margin-bottom: 37px;
+        }
+        .sideItemBlock img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .swiper-slide .sideItemBlock{
+            transform: scale3d(0.9, 0.9, 1);
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+        .swiper-slide.swiper-slide-active .sideItemBlock{
+            transform: scale3d(1, 1, 1);
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+        .swiper-pagination{
+            bottom: 0px !important;
+        }
+        .swiper-pagination-bullet{
+            width: 50px;
+            height: 7px;
+            border-radius: 0px;
+            background-color: #fff;
+            opacity: 0.57;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+        .swiper-pagination-bullet.swiper-pagination-bullet-active{
+            opacity: 1;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+        .servingSlideBtn{
+            text-align: center;
+            margin-top: 50px;
+            width: 100%;
+        }
+        .infoProductBtnBox{
+            text-align: center;
+            margin-top: 0px;
+            width: 100%;
+        }
+        .infoProductBtnBox a{
+            margin-left: 205px;
+        }
+
+        /* Variety */
+        .varietyBlock{
+            background-color: #fff;
+            padding: 75px 0px 79px;
+        }
+        .productRow{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .productImgCol{
+            width: 648px;
+        }
+        .productImgCol img{
+            width: 100%;
+        }
+        .productTxtCol{
+            width: 834px;
+        }
+        .productTxtCol h4{
+            font-size: 36px;
+            font-weight: 500;
+            color: #CC2000;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        .productTxtCol h3{
+            font-size: 52px;
+            font-weight: 600;
+            color: #2E2A39;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+        .productTxtCol p{
+            font-size: 26px;
+            font-weight: 400;
+            color: #000000;
+            margin-bottom: 24px;
+        }
+        .productTxtCol p.priceTxt{
+            font-size: 46px;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 18px;
+        }
+        .varietyBtnArea{
+            margin-right: 56px;
+        }
+        .varietyRateArea p{
+            margin-bottom: 0px;
+            font-size: 20px;
+            font-weight: 400;
+            color: #000000;
+        }
+        .varietyBtnBlock{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .rateStarImg img{
+            width: 142.46px;
+            height: 26.02px;
+            margin-right: 12px;
+        }
+        .rateStarImg p, .rateStarImg{
+            display: flex;
+            align-items: center;
+        }
+        .rateStarImg p span{
+            font-size: 26px;
+            margin-right: 19.5px;
+        }
+
+        /* Gifts */
+
+        .giftsBlock{
+            background-color: #000000;
+            padding: 75px 0px 96px;
+            position: relative;
+            background-image: url('https://cdn.shopify.com/s/files/1/0589/2125/5095/files/bannerBgLayer.png?v=1674564063');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .giftsBlock .sectionMianTitleTxt{
+            max-width: 75%;
+        }
+        .giftsBlock .sectionMianTitleTxt h2{
+            margin-bottom: 24px;
+        }
+        .giftRow{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .infoColBox{
+            width: 50%;
+            padding-right: 41px;
+        }
+        .infoProductBox{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .infoProductImgBox{
+            width: 100%;
+        }
+        .infoProductImgBox img{
+            width: 100%;
+        }
+        .infoColBox p{
+            font-size: 26px;
+            color: #fff;
+            font-weight: 500;
+            margin-bottom: 11px;
+        }
+        .infoColBox ul{
+            padding-left: 25px;
+            margin-bottom: 35px;
+        }
+        .infoColBox ul li{
+            font-size: 26px;
+            color: #fff;
+            font-weight: 500;
+            margin-bottom: 11px; 
+        }
+        .productItemBox{
+            width: 48%;
+            border: 1px solid #fff;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .productItemImg{
+            width: 100%;
+            height: 200px;
+            background-color: #fff;
+            padding: 27px;
+            position: relative;
+        }
+        .productItemImg img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .productItemTxt{
+            padding: 41px 15px 39px;
+            text-align: center;
+        }
+        .productItemTxt h6{
+            color: #fff;
+            font-size: 26px;
+            font-weight: 100;
+            margin-bottom: 8px;
+        }
+        .productItemTxt h5{
+            color: #fff;
+            font-size: 26px;
+            font-weight: 400;
+            margin-bottom: 29px;
+        }
+        .stockOutTag{
+            background-color: #B98800;
+            border-radius: 4px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 4px 17px;
+        }
+        .stockOutTag p{
+            font-size: 12px;
+            color: #fff;
+            margin-bottom: 0px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        .stockOutTag::after{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: -9px;
+            width: 13.63px;
+            height: 10.39px;
+            clip-path: polygon(100% 0, 2% 50%, 100% 100%);
+            transform: translate(0%, -50%);
+            background-color: #B98800;
+        }
+        .salePrice{
+            background-color: #CC2000;
+            border-radius: 4px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 4px 17px;
+        }
+        .salePrice p{
+            font-size: 12px;
+            color: #fff;
+            margin-bottom: 0px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        .salePrice::after{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: -9px;
+            width: 13.63px;
+            height: 10.39px;
+            clip-path: polygon(100% 0, 2% 50%, 100% 100%);
+            transform: translate(0%, -50%);
+            background-color: #CC2000;
+        }
+
+        /* Testimonial */
+        .testimonialBlock{
+            padding: 76px 0px 85px;
+        }
+        .testimonialTitle{
+            max-width: 60%;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 35px;
+        }
+        .testimonialTitle h6{
+            font-size: 26px;
+            color: #CC2000;
+            margin-bottom: 5px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        .testimonialTitle h4{
+            font-size: 52px;
+            color: #2E2A39;
+            margin-bottom: 0px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .testimonialRow{
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .testimonialWhiteBox {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 37px 37px;
+            margin: 35px 0px;
+            box-shadow: 0px 0px 4px 0px rgb(0 0 0 / 16%);
+            border: 1px solid rgb(0 0 0 / 16%);
+            width: 32%;
+        }
+        .commaImg{
+            width: 45.56px;
+            height: 34.27px;
+            margin: 0 auto;
+            margin-bottom: 24.7px;
+        }
+        .commaImg img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .testimonialTxt{
+            text-align: center;
+        }
+        .testimonialTxt span.lineBr{
+            display: block;
+            width: 36px;
+            height: 2px;
+            background-color: #707070;
+            border-radius: 2px;
+            margin: 0 auto;
+            margin-bottom: 15.5px;
+        }
+        .testimonialTxt p{
+            font-size: 20px;
+            font-weight: 400;
+            color: #000000;
+            margin-bottom: 15.5px;
+            min-height: 160px;
+        }
+        .testimonialDates p{
+            min-height: inherit;
+        }
+        .userTestimonialImg{
+            width: 93px;
+            height: 93px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+            margin-bottom: 13px;
+        }
+        .userTestimonialImg img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .userTestimonial h5{
+            font-size: 24px;
+            color: #000;
+            font-weight: 600;
+            margin-bottom: 10.5px;
+            text-transform: uppercase;
+        }
+        .testimonialUserRateStar{
+            width: 88.69px;
+            height: 15.48px;
+        }
+        .testimonialUserRateStar img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .testimonialSlider{
+            position: relative;
+        }
+        .testimonialSlider .swiper-pagination{
+            position: relative;
+            bottom: 0px;
+        }
+        .testimonialSlider .swiper-pagination-bullet{
+            background-color: #CC2000;
+            opacity: 0.2;
+        }
+        .testimonialSlider .swiper-pagination-bullet.swiper-pagination-bullet-active{
+            opacity: 1;
+        }
+        .sliderNextBtn{
+            background-color: transparent;
+            display: block;
+            border: none;
+            padding: 0px;
+            width: 19.64px;
+            height: 39.32px;
+            position: absolute;
+            top: 50%;
+            right: -43px;
+            transform: translate(0%, -50%);
+            opacity: 0.78;
+            cursor: pointer;
+        }
+        .sliderNextBtn img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .sliderPrevBtn{
+            background-color: transparent;
+            display: block;
+            border: none;
+            padding: 0px;
+            width: 19.64px;
+            height: 39.32px;
+            position: absolute;
+            top: 50%;
+            left: -43px;
+            transform: translate(0%, -50%);
+            opacity: 0.2;
+            cursor: pointer;
+        }
+        .sliderPrevBtn img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .testimonialDates{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .testimonialDates p{
+            font-size: 14px;
+            color: #000000;
+            font-weight: 300;
+            margin-bottom: 0px;
+            margin-left: 14px;
+        }
+
+        /* Supplies */
+        .suppliesBlock{
+            background-color: #000000;
+            padding: 107px 0px 106px;
+            position: relative;
+            background-image: url('https://cdn.shopify.com/s/files/1/0589/2125/5095/files/suppliesBg.png?v=1674642085');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .suppliesRow{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .suppliesTxtColumn{
+            width: 738px;
+        }
+        .suppliesImgColumn{
+            width: 588px;
+        }
+        .suppliesImgColumn img{
+            width: 100%;
+            height: 100%;
+        }
+        .suppliesTxtColumn h5{
+            font-size: 60px;
+            color: #fff;
+            font-weight: 700;
+            margin-bottom: 7px;
+            font-style: italic;
+            text-transform: uppercase;
+        }
+        .suppliesTxtColumn h6{
+            font-size: 43px;
+            color: #fff;
+            font-weight: 400;
+            margin-bottom: 3px;
+            font-style: italic;
+            text-transform: uppercase;
+        }
+        .suppliesTxtColumn h3{
+            font-size: 60px;
+            color: #CF2001;
+            font-weight: 700;
+            margin-bottom: 84px;
+            font-style: italic;
+            text-transform: uppercase;
+        }
+        @media screen and (max-width: 1600px) and (min-width: 1301px){
+            .container {
+                max-width: 1201px;
+                padding: 0 15px;
+            }
+            .bannerTxt h3 {
+                font-size: 20px;
+            }
+            .bannerTxt h1 {
+                font-size: 62px;
+            }
+            .bannerTxt h2{
+                font-size: 62px;
+                line-height: 49px;
+            }
+            .bannerTxt h2 span {
+                font-size: 26px;
+                line-height: 26px;
+            }
+            .bannerTxt p {
+                font-size: 20px;
+                margin-bottom: 40px;
+            }
+            .saleThemeBtn {
+                padding: 9px 27px;
+                font-size: 18px;
+            }
+            .bannerImgBlock {
+                width: 478.12px;
+            }
+            .mainBannerBlock {
+                padding: 150px 0px;
+            }
+            .sectionMianTitleTxt h5 {
+                font-size: 25px;
+            }
+            .sectionMianTitleTxt h2 {
+                font-size: 33px;
+            }
+            .mainContactBlock p {
+                font-size: 20px;
+                margin-bottom: 16px;
+            }
+            .mainContactBlock h6 {
+                font-size: 20px;
+            }
+            .ctmSliderBlock {
+                width: 695px;
+            }
+            .sideItemBlock {
+                height: 322px;
+            }
+            .productTxtCol h4 {
+                font-size: 25px;
+            }
+            .productTxtCol h3 {
+                font-size: 33px;
+                margin-bottom: 15px;
+            }
+            .productTxtCol p {
+                font-size: 20px;
+                margin-bottom: 16px;
+            }
+            .productTxtCol p.priceTxt {
+                font-size: 33px;
+                margin-bottom: 10px;
+            }
+            .rateStarImg p, .varietyRateArea p{
+                margin-bottom: 0px;
+            }
+            .rateStarImg img {
+                width: 102.46px;
+                height: 19.02px;
+            }
+            .rateStarImg p span {
+                font-size: 22px;
+                margin-right: 12.5px;
+            }
+            .productTxtCol {
+                width: 58%;
+            }
+            .productImgCol {
+                width: 40%;
+            }
+            .infoColBox p {
+                font-size: 20px;
+                font-weight: 500;
+            }
+            .infoColBox ul li {
+                font-size: 20px;
+            }
+            .productItemTxt h6 {
+                font-size: 22px;
+            }
+            .productItemTxt h5 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            .productItemTxt {
+                padding: 30px 15px 33px;
+            }
+            .testimonialTitle h4 {
+                font-size: 41px;
+            }
+            .testimonialSlider {
+                max-width: 90%;
+                margin: 0 auto;
+            }
+            .testimonialWhiteBox {
+                padding: 27px 27px;
+            }
+            .infoProductBtnBox a {
+                margin-left: 0;
+            }
+            .suppliesTxtColumn h5 {
+                font-size: 41px;
+            }
+            .suppliesTxtColumn h6 {
+                font-size: 30px;
+            }
+            .suppliesTxtColumn h3 {
+                font-size: 41px;
+                margin-bottom: 40px;
+            }
+            .suppliesImgColumn {
+                width: 505px;
+            }
+            .suppliesTxtColumn {
+                width: 494px;
+            }
+            .varietyRateArea p{
+                margin-bottom: 0px;
+            }
+            .testimonialTxt p {
+                min-height: 192px;
+            }
+            .testimonialWhiteBox {
+                width: 49%;
+                margin: 0px;
+                margin-bottom: 20px;
+            }
+            .testimonialDates p{
+              min-height: inherit;
+            }
+        }
+        @media screen and (max-width: 1300px) and (min-width: 1201px){
+            .container {
+                max-width: 1201px;
+                padding: 0 15px;
+            }
+            .bannerTxt h3 {
+                font-size: 20px;
+            }
+            .bannerTxt h1 {
+                font-size: 62px;
+            }
+            .bannerTxt h2{
+                font-size: 62px;
+                line-height: 49px;
+            }
+            .bannerTxt h2 span {
+                font-size: 26px;
+                line-height: 26px;
+            }
+            .bannerTxt p {
+                font-size: 20px;
+                margin-bottom: 40px;
+            }
+            .saleThemeBtn {
+                padding: 9px 27px;
+                font-size: 18px;
+            }
+            .bannerImgBlock {
+                width: 478.12px;
+            }
+            .mainBannerBlock {
+                padding: 150px 0px;
+            }
+            .sectionMianTitleTxt h5 {
+                font-size: 25px;
+            }
+            .sectionMianTitleTxt h2 {
+                font-size: 33px;
+            }
+            .mainContactBlock p {
+                font-size: 20px;
+                margin-bottom: 16px;
+            }
+            .mainContactBlock h6 {
+                font-size: 20px;
+            }
+            .ctmSliderBlock {
+                width: 695px;
+            }
+            .sideItemBlock {
+                height: 322px;
+            }
+            .productTxtCol h4 {
+                font-size: 25px;
+            }
+            .productTxtCol h3 {
+                font-size: 33px;
+                margin-bottom: 15px;
+            }
+            .productTxtCol p {
+                font-size: 20px;
+                margin-bottom: 16px;
+            }
+            .productTxtCol p.priceTxt {
+                font-size: 33px;
+                margin-bottom: 10px;
+            }
+            .rateStarImg p, .varietyRateArea p{
+                margin-bottom: 0px;
+            }
+            .rateStarImg img {
+                width: 102.46px;
+                height: 19.02px;
+            }
+            .rateStarImg p span {
+                font-size: 22px;
+                margin-right: 12.5px;
+            }
+            .productTxtCol {
+                width: 58%;
+            }
+            .productImgCol {
+                width: 40%;
+            }
+            .infoColBox p {
+                font-size: 20px;
+                font-weight: 500;
+            }
+            .infoColBox ul li {
+                font-size: 20px;
+            }
+            .productItemTxt h6 {
+                font-size: 22px;
+            }
+            .productItemTxt h5 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            .productItemTxt {
+                padding: 30px 15px 33px;
+            }
+            .testimonialTitle h4 {
+                font-size: 41px;
+            }
+            .testimonialSlider {
+                max-width: 90%;
+                margin: 0 auto;
+            }
+            .testimonialWhiteBox {
+                padding: 27px 27px;
+            }
+            .infoProductBtnBox a {
+                margin-left: 0;
+            }
+            .suppliesTxtColumn h5 {
+                font-size: 41px;
+            }
+            .suppliesTxtColumn h6 {
+                font-size: 30px;
+            }
+            .suppliesTxtColumn h3 {
+                font-size: 41px;
+                margin-bottom: 40px;
+            }
+            .suppliesImgColumn {
+                width: 505px;
+            }
+            .suppliesTxtColumn {
+                width: 494px;
+            }
+            .varietyRateArea p{
+                margin-bottom: 0px;
+            }
+            .testimonialTxt p {
+                min-height: 192px;
+            }
+            .testimonialWhiteBox {
+                width: 49%;
+                margin: 0px;
+                margin-bottom: 20px;
+            }
+            .testimonialDates p{
+              min-height: inherit;
+            }
+        }
+        @media screen and (max-width: 1200px) and (min-width: 1025px){
+            .container {
+                max-width: 1024px;
+                padding: 0 15px;
+            }
+            .bannerTxt h1 {
+                font-size: 60px;
+            }
+            .bannerTxt h2 {
+                font-size: 60px;
+                line-height: 55px;
+            }
+            .bannerTxt h2 span {
+                font-size: 30px;
+                line-height: 35px;
+            }
+            .bannerTxt p {
+                font-size: 18px;
+                margin-bottom: 35px;
+            }
+            .saleThemeBtn {
+                padding: 11px 30px;
+                font-size: 20px;
+            }
+            .mainBannerBlock {
+                padding: 100px 0px 100px;
+            }
+            .bannerImgBlock {
+                width: 378.12px;
+                height: 92%;
+            }
+            .bannerTxt h3 {
+                font-size: 20px;
+            }
+            .sectionMianTitleTxt {
+                max-width: 100%;
+            }
+            .ctmSliderBlock {
+                width: 80%;
+                position: relative;
+                top: 0;
+                right: 0;
+                transform: none;
+                margin: 0 auto;
+                margin-top: 50px;
+            }
+            .sideItemBlock {
+                width: 100%;
+                height: 382px;
+            }
+            .sectionMianTitleTxt h5 {
+                font-size: 26px;
+            }
+            .sectionMianTitleTxt h2 {
+                font-size: 41px;
+            }
+            .mainContactBlock {
+                padding-right: 0;
+            }
+            .mainContactBlock p {
+                font-size: 22px;
+                margin-bottom: 25px;
+            }
+            .mainContactBlock h6 {
+                font-size: 22px;
+            }
+            .productImgCol {
+                width: 550px;
+            }
+            .productImgCol {
+                width: 390px;
+            }
+            .productTxtCol {
+                width: 570px;
+            }
+            .productTxtCol h4 {
+                font-size: 26px;
+            }
+            .productTxtCol h3 {
+                font-size: 35px;
+                margin-bottom: 24px;
+            }
+            .productTxtCol p {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+            .productTxtCol p.priceTxt {
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+            .rateStarImg p{
+                font-size: 18px;
+                margin-bottom: 0px;
+            }
+            .rateStarImg p span {
+                font-size: 20px;
+                margin-right: 19.5px;
+            }
+            .rateStarImg img {
+                width: 116.46px;
+                height: 21.02px;
+                margin-right: 18px;
+            }
+            .giftsBlock .sectionMianTitleTxt {
+                max-width: 100%;
+            }
+            .infoColBox p {
+                font-size: 22px;
+            }
+            .infoColBox ul li {
+                font-size: 22px;
+            }
+            .productItemTxt h6 {
+                font-size: 20px;
+            }
+            .productItemTxt h5 {
+                color: #fff;
+                font-size: 20px;
+                margin-bottom: 21px;
+            }
+            .infoColBox {
+                width: 100%;
+                padding-right: 0px;
+            }
+            .infoProductBox {
+                width: 70%;
+                margin: 0 auto;
+                margin-top: 50px;
+            }
+            .testimonialTitle h4 {
+                font-size: 41px;
+            }
+            .testimonialSlider {
+                max-width: 90%;
+                margin: 0 auto;
+            }
+            .testimonialWhiteBox {
+                padding: 27px 27px;
+            }
+            .infoProductBtnBox a {
+                margin-left: 0;
+            }
+            .suppliesTxtColumn h5 {
+                font-size: 41px;
+            }
+            .suppliesTxtColumn h6 {
+                font-size: 30px;
+            }
+            .suppliesTxtColumn h3 {
+                font-size: 41px;
+                margin-bottom: 40px;
+            }
+            .suppliesImgColumn {
+                width: 408px;
+            }
+            .suppliesTxtColumn {
+                width: 494px;
+            }
+            .varietyRateArea p{
+                margin-bottom: 0px;
+            }
+            .testimonialTxt p {
+                min-height: 192px;
+            }
+            .testimonialWhiteBox {
+                width: 49%;
+                margin: 0px;
+                margin-bottom: 20px;
+            }
+            .testimonialDates p{
+              min-height: inherit;
+            }
+        }
+        @media(max-width: 1024px){
+            .bannerTxt h1 {
+                font-size: 60px;
+            }
+            .bannerTxt h2 {
+                font-size: 60px;
+                line-height: 55px;
+            }
+            .bannerTxt h2 span {
+                font-size: 30px;
+                line-height: 35px;
+            }
+            .bannerTxt p {
+                font-size: 18px;
+                margin-bottom: 35px;
+            }
+            .saleThemeBtn {
+                padding: 11px 30px;
+                font-size: 20px;
+            }
+            .mainBannerBlock {
+                padding: 100px 0px 100px;
+            }
+            .bannerImgBlock {
+                width: 378.12px;
+                height: 92%;
+            }
+            .bannerTxt h3 {
+                font-size: 20px;
+            }
+            .sectionMianTitleTxt {
+                max-width: 100%;
+            }
+            .ctmSliderBlock {
+                width: 80%;
+                position: relative;
+                top: 0;
+                right: 0;
+                transform: none;
+                margin: 0 auto;
+                margin-top: 50px;
+            }
+            .sideItemBlock {
+                width: 100%;
+                height: 382px;
+            }
+            .sectionMianTitleTxt h5 {
+                font-size: 26px;
+            }
+            .sectionMianTitleTxt h2 {
+                font-size: 41px;
+            }
+            .mainContactBlock {
+                padding-right: 0;
+            }
+            .mainContactBlock p {
+                font-size: 22px;
+                margin-bottom: 25px;
+            }
+            .mainContactBlock h6 {
+                font-size: 22px;
+            }
+            .productImgCol {
+                width: 550px;
+            }
+            .productImgCol {
+                width: 390px;
+            }
+            .productTxtCol {
+                width: 570px;
+            }
+            .productTxtCol h4 {
+                font-size: 26px;
+            }
+            .productTxtCol h3 {
+                font-size: 35px;
+                margin-bottom: 24px;
+            }
+            .productTxtCol p {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+            .productTxtCol p.priceTxt {
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+            .rateStarImg p{
+                font-size: 18px;
+                margin-bottom: 0px;
+            }
+            .rateStarImg p span {
+                font-size: 20px;
+                margin-right: 19.5px;
+            }
+            .rateStarImg img {
+                width: 116.46px;
+                height: 21.02px;
+                margin-right: 18px;
+            }
+            .giftsBlock .sectionMianTitleTxt {
+                max-width: 100%;
+            }
+            .infoColBox p {
+                font-size: 22px;
+            }
+            .infoColBox ul li {
+                font-size: 22px;
+            }
+            .productItemTxt h6 {
+                font-size: 20px;
+            }
+            .productItemTxt h5 {
+                color: #fff;
+                font-size: 20px;
+                margin-bottom: 21px;
+            }
+            .infoColBox {
+                width: 100%;
+                padding-right: 0px;
+            }
+            .infoProductBox {
+                width: 70%;
+                margin: 0 auto;
+                margin-top: 50px;
+            }
+            .testimonialTitle h4 {
+                font-size: 41px;
+            }
+            .testimonialSlider {
+                max-width: 90%;
+                margin: 0 auto;
+            }
+            .testimonialWhiteBox {
+                padding: 27px 27px;
+            }
+            .infoProductBtnBox a {
+                margin-left: 0;
+            }
+            .suppliesTxtColumn h5 {
+                font-size: 41px;
+            }
+            .suppliesTxtColumn h6 {
+                font-size: 30px;
+            }
+            .suppliesTxtColumn h3 {
+                font-size: 41px;
+                margin-bottom: 40px;
+            }
+            .suppliesImgColumn {
+                width: 408px;
+            }
+            .suppliesTxtColumn {
+                width: 494px;
+            }
+            .varietyRateArea p{
+                margin-bottom: 0px;
+            }
+            .testimonialTxt p {
+                min-height: 192px;
+            }
+            .testimonialWhiteBox {
+                width: 49%;
+                margin: 0px;
+                margin-bottom: 20px;
+            }
+            .testimonialDates p{
+              min-height: inherit;
+            }
+        }
+        @media(max-width: 991px){
+            .ctmSliderBlock {
+                width: 100%;
+            }
+            .sideItemBlock {
+                width: 100%;
+                height: 342px;
+            }
+            .chientItemBox {
+                width: 82.56px;
+            }
+            .bannerTxt h1 {
+                font-size: 50px;
+            }
+            .bannerTxt h2 {
+                font-size: 50px;
+                line-height: 44px;
+            }
+            .bannerTxt h2 span {
+                font-size: 25px;
+                line-height: 26px;
+            }
+            .bannerTxt p {
+                font-size: 16px;
+                margin-bottom: 25px;
+            }
+            .saleThemeBtn {
+                padding: 12px 30px;
+                font-size: 16px;
+            }
+            .bannerImgBlock {
+                width: 308.12px;
+                height: 82%;
+            }
+            .bannerTxt {
+                max-width: 57%;
+            }
+            .bannerTxt h3 {
+                font-size: 18px;
+            }
+            .sectionMianTitleTxt h5 {
+                font-size: 22px;
+            }
+            .sectionMianTitleTxt h2 {
+                font-size: 34px;
+            }
+            .mainContactBlock p {
+                font-size: 20px;
+                margin-bottom: 22px;
+            }
+            .mainContactBlock h6 {
+                font-size: 20px;
+            }
+            .productRow {
+                flex-wrap: wrap;
+            }
+            .productImgCol {
+                width: 100%;
+            }
+            .productTxtCol {
+                width: 100%;
+                margin-top: 30px;
+            }
+            .productTxtCol h4 {
+                font-size: 22px;
+            }
+            .productTxtCol h3 {
+                font-size: 34px;
+                margin-bottom: 12px;
+            }
+            .varietyRateArea p{
+                margin-bottom: 0px;
+            }
+            .productTxtCol p.priceTxt {
+                font-size: 25px;
+            }
+            .infoColBox p {
+                font-size: 20px;
+            }
+            .infoColBox ul li {
+                font-size: 20px;
+            }
+            .infoProductBox {
+                width: 90%;
+            }
+            .testimonialTxt p {
+                font-size: 19px;
+            }
+            .commaImg {
+                width: 32.56px;
+                height: 26.27px;
+            }
+            .userTestimonialImg {
+                width: 73px;
+                height: 73px;
+            }
+            .userTestimonial h5 {
+                font-size: 17px;
+            }
+            .testimonialTitle h4 {
+                font-size: 34px;
+            }
+            .testimonialTitle h6 {
+                font-size: 22px;
+            }
+            .testimonialTitle {
+                max-width: 80%;
+            }
+            .suppliesTxtColumn {
+                width: 100%;
+            }
+            .suppliesImgColumn {
+                width: 100%;
+                margin: 0 auto;
+                margin-top: 50px;
+            }
+        }
+        @media(max-width: 767px){
+            .bannerImgBlock {
+                width: 100%;
+                height: auto;
+                position: relative;
+                margin-top: 30px;
+            }
+            .bannerTxt {
+                max-width: 100%;
+            }
+            .mainBannerBlock {
+                padding: 100px 0px 0px;
+            }
+            .saleThemeBtn {
+                padding: 11px 30px;
+                font-size: 14px;
+            }
+            .bannerTxt h3 {
+                font-size: 17px;
+            }
+            .bannerTxt h1 {
+                font-size: 35px;
+            }
+            .bannerTxt h2 {
+                font-size: 35px;
+                line-height: 29px;
+            }
+            .bannerTxt h2 span {
+                font-size: 17px;
+                line-height: 17px;
+            }
+            .bannerTxt p {
+                font-size: 14px;
+                margin-bottom: 23px;
+            }
+            .chientItemBox {
+                width: 83.56px;
+                height: 40.67px;
+            }
+            .clientFlexBox {
+                justify-content: center;
+                gap: 20px;
+            }
+            .sectionMianTitleTxt h2 {
+                font-size: 25px;
+            }
+            .sectionMianTitleTxt h5 {
+                font-size: 18px;
+            }
+            .mainContactBlock p {
+                font-size: 15px;
+            }
+            .mainContactBlock h6 {
+                font-size: 14px;
+            }
+            .sideItemBlock {
+                width: 100%;
+                height: 482px;
+                margin-bottom: 55px;
+            }
+            .productTxtCol h4 {
+                font-size: 18px;
+            }
+            .productTxtCol h3 {
+                font-size: 25px;
+            }
+            .productTxtCol p {
+                font-size: 15px;
+            }
+            .productTxtCol p.priceTxt {
+                font-size: 22px;
+            }
+            .varietyBtnArea {
+                margin-right: 0;
+            }
+            .varietyRateArea{
+                margin-top: 20px;
+            }
+            .rateStarImg p span {
+                font-size: 18px;
+                margin-right: 19.5px;
+            }
+            .infoColBox p {
+                font-size: 15px;
+            }
+            .infoColBox ul li {
+                font-size: 15px;
+            }
+            .infoColBox ul {
+                padding-left: 17px;
+                margin-bottom: 20px;
+            }
+            .infoProductBox{
+                width: 100%;
+                flex-wrap: wrap;
+            }
+            .productItemBox {
+                width: 100%;
+                margin-bottom: 15px;
+                overflow: hidden;
+            }
+            .productItemTxt {
+                padding: 21px 15px 25px;
+                text-align: center;
+            }
+            .sliderPrevBtn, .sliderNextBtn{
+                display: none;
+            }
+            .testimonialSlider {
+                max-width: 100%;
+                margin: 0 auto;
+            }
+            .testimonialTxt p {
+                font-size: 16px;
+            }
+            .userTestimonial h5 {
+                font-size: 16px;
+            }
+            .testimonialTitle {
+                max-width: 100%;
+            }
+            .testimonialTitle h6 {
+                font-size: 18px;
+            }
+            .testimonialTitle h4 {
+                font-size: 25px;
+            }
+            .suppliesTxtColumn h5 {
+                font-size: 28px;
+            }
+            .suppliesTxtColumn h6 {
+                font-size: 18px;
+            }
+            .suppliesTxtColumn h3 {
+                font-size: 28px;
+            }
+          .testimonialTxt p {
+                min-height: inherit;
+            }
+            .testimonialWhiteBox {
+                width: 100%;
+                margin: 0px;
+                margin-bottom: 20px;
+            }
+            .testimonialDates p{
+              min-height: inherit;
+            }
+            .varietyBtnBlock{
+              justify-content:space-between;
+            }
+        }
+    </style>
+    <!-- Banner -->
+    <section class="mainBannerBlock">
+        <div class="container">
+            <div class="bannerTxt">
+                <h3>Introducing the ultimate dynamic duo.</h3>
+                <h1>Two is</h1>
+                <h2><span>Better</span> than One</h2>
+                <p>Score a FREE 6” Chef Knife when you grab the Executive Chef Knife!</p>
+                <a href="https://shop.cusocuts.com/products/cuso-cuts-ultimate-knife-duo" class="saleThemeBtn">Unlock Deal Now</a>
+            </div>
+            <div class="bannerImgBlock">
+                <img src="https://cdn.shopify.com/s/files/1/0589/2125/5095/files/bannerImg_39a9e44d-e2ab-4186-bb7c-985f966e0fb8.png?v=1674642084" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Banner -->
+
+    <!-- Clients -->
+    <section class="clientsBlock">
+        <div class="container">
+            <div class="clientFlexBox">
+                <div class="chientItemBox">
+                    <img src="https://cdn.shopify.com/s/files/1/0589/2125/5095/files/Asset_23_4x_edc324c1-b925-4341-a067-e61b571571f5.png?v=1673612276" alt="">
+                </div>
+                <div class="chientItemBox">
+                    <img src="https://cdn.shopify.com/s/files/1/0589/2125/5095/files/Asset_24_4x_e7b65e49-cac5-4033-9314-74555c0fd535.png?v=1673612291" alt="">
+                </div>
+                <div class="chientItemBox">
+                    <img src="https://cdn.shopify.com/s/files/1/0589/2125/5095/files/Asset_26_4x_565f1161-219b-4ec5-8b9a-cb9a9640f112.png?v=1673612304" alt="">
+                </div>
+                <div class="chientItemBox">
+                    <img src="https://cdn.shopify.com/s/files/1/0589/2125/5095/files/Asset_27_4x_4eb3ae4f-879e-4d61-aff1-1ebcb8f6693d.png?v=1673612326" alt="">
+                </div>
+                <div class="chientItemBox">
+                    <img src="https://cdn.shopify.com/s/files/1/0589/2125/5095/files/Asset_28_4x_49778602-6126-4007-9ebb-ad979beb192d.png?v=1673612336" alt="">
+                </div>
+                <div class="chientItemBox">
+                    <img src="https://cdn.shopify.com/s/files/1/0589/2125/5095/files/Asset_29_4x_378606f1-db97-41a1-97f8-ae4df8cef1ac.png?v=1673612359" alt="">
+                </div>
+                <div class="chientItemBox">
+                    <img src="https://cdn.shopify.com/s/files/1/0589/2125/5095/files/Asset_30_4x_5f688797-2b75-438c-ba68-43c96b52e993.png?v=1673612376" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Clients -->
+
+    <!-- Serving Block -->
+    <section class="servingBlock">
+        <div class="container">
+            <div class="sectionMianTitleTxt">
+                <h5>CUSO CUTS</h5>
+                <h2>From prep to serving, <span>two
+                    blades</span> to do it all.</h2>
+                <div class="mainContactBlock">
+                    <p>There are three things that can either make your kitchen knives a dream to work with or a nightmare:</p>
+                    <h6>1. Durability</h6>
+                    <p>You’ve painstakingly put all your love and attention into searing that prime rib eye steak and your dull chef knife is tearing it to unrecognizable shreds.</p>
+                    <h6>2. Handling</h6>
+                    <p>Raise your hand if you’ve chopped away at an onion, admiring your handiwork when your grip slipped. Heart racing, you look and there it is, another bloody finger.</p>
+                    <h6>3. Size</h6>
+                    <p>Deciding between a 6” chef knife vs an 8” can be a tough choice. The age old question, is bigger better?</p>
+                </div>
+            </div>
+            <div class="ctmSliderBlock">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="sideItemBlock">
+                                <img src="https://cdn.shopify.com/s/files/1/0589/2125/5095/files/slideItemImg1.png?v=1674564453" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sideItemBlock">
+                                <img src="https://cdn.shopify.com/s/files/1/0589/2125/5095/files/sliderKnife.png?v=1674642084" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sideItemBlock">
+                                <img src="https://cdn.shopify.com/s/files/1/0589/2125/5095/files/slideItemImg3.png?v=1674564452" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="servingSlideBtn">
+                    <a href="https://shop.cusocuts.com/products/cuso-cuts-ultimate-knife-duo" class="saleThemeBtn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Serving Block -->
+
+    <!-- Testimonials -->
+    <section class="testimonialBlock">
+        <div class="container">
+            <div class="testimonialTitle">
+                <h6>TESTIMONIALS</h6>
+                <h4>LET'S HEAR WHAT THEY SAY...</h4>
+            </div>
+            <div class="testimonialSlider">
+              <div class="testimonialRow">
+                <div class="testimonialWhiteBox">
+                    <div class="commaImg">
+                        <img src="https://cdn.shopify.com/s/files/1/0589/2125/5095/files/commaImg.png?v=1674642089" alt="">
+                    </div>
+                    <div class="testimonialTxt">
+                        <p><b>The most beautiful knifes</b> It makes me happy when I go to grab a knife and it is beautiful and to top it off it cuts too , best purchase I made in years</p>
+                        <span class="lineBr"></span>
+                        <div class="userTestimonial">
+                            <div class="userTestimonialImg">
+                                <img src="https://cdn.shopify.com/s/files/1/0589/2125/5095/files/testimonial_m.png?v=1674642083" alt="">
+                            </div>
+                            <h5>Margo Rooney</h5>
+                            <div class="testimonialDates">
+                                <div class="testimonialUserRateStar">
+                                    <img src="https://cdn.shopify.com/s/files/1/0589/2125/5095/files/fiveStar.png?v=1674643209" alt="">
+                                </div>
+                                <p>01/15/2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonialWhiteBox">
+                    <div class="commaImg">
+                        <img src="https://cdn.shopify.com/s/files/1/0589/2125/5095/files/commaImg.png?v=1674642089" alt="">
+                    </div>
+                    <div class="testimonialTxt">
+                        <p><b>Great Knife, box not so much.</b> I love the knife. Solid quality. Love the handle. Head and shoulders above my other knives. The box it comes in however was really beat up. I can’t even use it for storage.</p>
+                        <span class="lineBr"></span>
+                        <div class="userTestimonial">
+                            <div class="userTestimonialImg">
+                                <img src="https://cdn.shopify.com/s/files/1/0589/2125/5095/files/testimonial_c.png?v=1674642084" alt="">
+                            </div>
+                            <h5>Christopher Venezia</h5>
+                            <div class="testimonialDates">
+                                <div class="testimonialUserRateStar">
+                                    <img src="https://cdn.shopify.com/s/files/1/0589/2125/5095/files/fiveStar.png?v=1674643209" alt="">
+                                </div>
+                                <p>12/22/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonialWhiteBox">
+                    <div class="commaImg">
+                        <img src="https://cdn.shopify.com/s/files/1/0589/2125/5095/files/commaImg.png?v=1674642089" alt="">
+                    </div>
+                    <div class="testimonialTxt">
+                        <p><b>QUALITY</b> Love every single one of my new seasonings.. I highly recommend to anyone.</p>
+                        <span class="lineBr"></span>
+                        <div class="userTestimonial">
+                            <div class="userTestimonialImg">
+                                <img src="https://cdn.shopify.com/s/files/1/0589/2125/5095/files/testimonial_s.png?v=1674642084" alt="">
+                            </div>
+                            <h5>Shane Korf</h5>
+                            <div class="testimonialDates">
+                                <div class="testimonialUserRateStar">
+                                    <img src="https://cdn.shopify.com/s/files/1/0589/2125/5095/files/fiveStar.png?v=1674643209" alt="">
+                                </div>
+                                <p>01/17/2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+<!--                 <button class="sliderPrevBtn">
+                    <img src="https://cdn.shopify.com/s/files/1/0589/2125/5095/files/sliderArrowIconLeft.png?v=1674642084" alt="">
+                </button>
+                <button class="sliderNextBtn">
+                    <img src="https://cdn.shopify.com/s/files/1/0589/2125/5095/files/sliderArrowIcon.png?v=1674642084" alt="">
+                </button> -->
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials -->
+    
+    <!-- Gifts -->
+    <section class="giftsBlock">
+        <div class="container">
+            <div class="sectionMianTitleTxt">
+                <h5>CUSO CUTS</h5>
+                <h2>blades make for ideal <span>gifts</span> year round
+                    and during the holidays! </h2>
+            </div>
+            <div class="giftRow">
+                <div class="infoColBox">
+                    <p>Perfect for the:</p>
+                    <ul>
+                        <li>Rookie cook who enjoys trying new recipes</li>
+                        <li>BBQ fanatic who’s best friends with their grill</li>
+                        <li>Professional chef who loves new shiny toys</li>
+                        <li>Always welcoming dinner party Host</li>
+                    </ul>
+                    <p>Relish being the unrivaled gifter with the gift of Cuso. With an immediate reaction and “wow-factor”, Cuso blades will provide ultimate user experience for years to come!</p>
+                </div>
+                <div class="infoProductBox">
+                    <div class="infoProductImgBox">
+                        <img src="https://cdn.shopify.com/s/files/1/0589/2125/5095/files/suppliesImg.png?v=1674642085" alt="">
+                    </div>
+                    <div class="infoProductBtnBox">
+                        <a href="https://shop.cusocuts.com/products/cuso-cuts-ultimate-knife-duo" class="saleThemeBtn">Unlock Deal Now</a>
+                    </div>
+                    <!-- <div class="productItemBox">
+                        <div class="productItemImg">
+                            <img src="https://cdn.shopify.com/s/files/1/0589/2125/5095/files/6inch_knife_resize.png?v=1674571838" alt="">
+                            <div class="stockOutTag">
+                                <p>STOCK OUT</p>
+                            </div>
+                        </div>
+                        <div class="productItemTxt">
+                            <h6>Cuso Cuts 6" Chef Knife</h6>
+                            <h5>$99.00</h5>
+                            <a href="https://shop.cusocuts.com/products/cuso-cuts-6-chef-knife" class="saleThemeBtn">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="productItemBox">
+                        <div class="productItemImg">
+                            <img src="https://cdn.shopify.com/s/files/1/0589/2125/5095/files/varietyImg.png?v=1674565164" alt="">
+                            <div class="salePrice">
+                                <p>-10% off</p>
+                            </div>
+                        </div>
+                        <div class="productItemTxt">
+                            <h6>Cuso Cuts Variety 6 Pack</h6>
+                            <h5>$59.99</h5>
+                            <a href="https://shop.cusocuts.com/products/cuso-cuts-variety-6-pack" class="saleThemeBtn">BUY NOW</a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gifts -->
+
+    <!-- Variety -->
+    <section class="varietyBlock">
+        <div class="container">
+            <div class="productRow">
+                <div class="productImgCol">
+                    <img src="https://cdn.shopify.com/s/files/1/0589/2125/5095/files/varietyImg.png?v=1674565164" alt="">
+                </div>
+                <div class="productTxtCol">
+                    <h4>CUSO CUTS</h4>
+                    <h3>Cuso Cuts Variety 6 Pack</h3>
+                    <p>Finding it hard to choose just one of Cuso Cuts BBQ Rubs? It’s okay, you’re not alone. So, we decided to bundle them all up into a 6 pack ready to ship to your home.</p>
+                    <p class="priceTxt">$59.99</p>
+                    <div class="varietyBtnBlock">
+                        <div class="varietyBtnArea">
+                            <a href="https://shop.cusocuts.com/products/cuso-cuts-variety-6-pack" class="saleThemeBtn">BUY NOW</a>
+                        </div>
+                        <div class="varietyRateArea">
+                            <div class="rateStarImg">
+                                <img src="https://cdn.shopify.com/s/files/1/0589/2125/5095/files/RatingStar4.png?v=1674708521" alt="">
+                                <p><span>16</span> reviews</p>
+                            </div>
+                            <p>Shipping calculated at checkout.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Variety -->
+
+    <!-- Supplies -->
+    <section class="suppliesBlock">
+        <div class="container">
+            <div class="suppliesRow">
+                <div class="suppliesTxtColumn">
+                    <h5>Don’t miss out on our</h5>
+                    <h6>offer while</h6>
+                    <h3>supplies last!</h3>
+                    <a href="https://shop.cusocuts.com/products/cuso-cuts-variety-6-pack" class="saleThemeBtn">Unlock Deal Now</a>
+                </div>
+                <div class="suppliesImgColumn">
+                    <img src="https://cdn.shopify.com/s/files/1/0589/2125/5095/files/suppliesSideImg.png?v=1674642084" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Supplies -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 0,
+            centeredSlides: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                1: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+                },
+            },
+        });
+
+        var swiper = new Swiper(".testimonialSlide", {
+            slidesPerView: 3,
+            spaceBetween: 26,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                1: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+                992: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                1201: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            },
+        });
+
+        document.querySelector('.sliderNextBtn').addEventListener('click' , (e)=>{
+            // console.log(swiper.animating)
+            swiper.slideNext()            
+            
+        });
+        document.querySelector('.sliderPrevBtn').addEventListener('click' , (e)=>{
+            swiper.slidePrev()
+        });
+    </script>
+</body>
+</html>

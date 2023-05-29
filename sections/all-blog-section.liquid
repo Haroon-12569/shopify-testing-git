@@ -1,0 +1,368 @@
+  <section class="mainBannerBlog"  style="background-image: url({{ section.settings.background_image | img_url:"600x"}});">
+        <div class="container">
+            <div class="receipeMore">
+                <div class="receipeMoreHeading">
+                    <h1>{{ section.settings.Recipe_more  }}</h1>
+                  <p>{{ section.settings.subtitle  }}</p>
+                </div>
+                <div class="serachBox">
+                    <form id="blog-search-form" action="">
+                        <div class="serachBoxInp">
+                            <input type="text" placeholder="Search any recipe.." >
+                            <button type="submit" class="blogBtn">Search</button>
+                        </div>
+                        <div class="searchDropDownArea">
+                          <ul>
+                            <li class="searchLoaderArea">
+                              <div class="searchLoader"></div>
+                            </li>
+                            <li>
+                              <a href="#.">
+                                <div class="searchThumbImg">
+                                  <img src="https://cusocuts.com/wp-content/uploads/bb-plugin/cache/93a6386b-9330-43b0-a7bb-b3c4eb8470d41-150x150-square.jpg" alt="">
+                                </div>
+                                <div class="searchTxtBlock">
+                                  <h4>Veal Parmesan Pizza over the Coals</h4>
+                                  <p>This is a Block</p>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <div class="noDataTxt">
+                                <p>Hello Beta</p>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>         
+            <div class="mainRecentparent">
+                <div class="mainRecentLeft">
+                  {%- assign blog = section.settings.blog -%}
+                    {% if blog != empty %}
+                        <div class="mainRecentImg">
+                            <img src="{{ blog.image  | img_url:"600x"}}" alt="">
+                        </div>
+                        <div class="mainRecentContent">
+                                <h2><a href="{{ blog.url }}">{{ blog.title }}</a></h2>
+                            <div class="showDateBox">
+                                <p>By: <span>{{ blog.author }}</span></p>
+                                <p>Date: <span>{{ blog.created_at | date: "%B %d, %Y" }}</span></p>
+                            </div>
+                            <p>{{ blog.content | strip_html  }}</p>
+                            <div class="readMore">
+                                <a href="{{ blog.url }}" class="blogBtn">Read More</a>
+                            </div>
+                        </div>
+                    {% else %}
+                        <div class="mainRecentImg">
+                            <img src="https://cdn.shopify.com/s/files/1/0589/2125/5095/files/istockphoto-1147544807-612x612.jpg?v=1681970148" alt="">
+                        </div>
+                        <div class="mainRecentContent">
+                                <h2><a href="#">Title</a></h2>
+                            <div class="showDateBox">
+                                <p>By: <span>Author</span></p>
+                                <p>Date: <span>Date Time</span></p>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <div class="readMore">
+                                <a href="#" class="blogBtn">Read More</a>
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>             
+                <div class="mainRecentRight">
+                    <div class="mainRecentBox">
+                        {%- assign blog2 = section.settings.blog_2 -%}
+                        {% if blog2 != empty %}
+                            <div class="mainRecentBoxImg">
+                                <img src="{{ blog2.image  | img_url:"600x"}}" alt="">
+                            </div>
+                            <div class="mainRecentBoxConetent">
+                                 <h2><a href="{{ blog2.url }}">{{ blog2.title }}</a></h2>
+                                <div class="showDateBox">
+                                    <p>By: <span>{{ blog2.author }}</span></p>
+                                    <p>Date: <span>{{ blog2.created_at | date: "%B %d, %Y" }}</span></p>
+                                </div>
+                                <p>{{ blog2.content | strip_html }}</p>                            
+                                <div class="readMore">
+                                    <a href="{{ blog2.url }}" class="blogBtn">Read More</a>
+                                </div>
+                            </div>
+                        {% else %}
+                            <div class="mainRecentBoxImg">
+                                <img src="https://cdn.shopify.com/s/files/1/0589/2125/5095/files/istockphoto-1147544807-612x612.jpg?v=1681970148" alt="">
+                            </div>
+                            <div class="mainRecentBoxConetent">
+                                <h2><a href="#">Title</a></h2>
+                                <div class="showDateBox">
+                                    <p>By: <span>Auhtor</span></p>
+                                    <p>Date: <span>Date Time</span></p>
+                                </div>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                            
+                                <div class="readMore">
+                                    <a href="#" class="blogBtn">Read More</a>
+                                </div>
+                            </div>
+                        {% endif %}
+                    </div>                 
+                    <div class="mainRecentBox">
+                        {%- assign blog3 = section.settings.blog_3 -%}
+                        {% if blog3 != empty %}
+                            <div class="mainRecentBoxImg">
+                                <img src="{{ blog3.image  | img_url:"600x"}}" alt="">
+                            </div>
+                            <div class="mainRecentBoxConetent">
+                                <h2><a href="{{ blog3.url }}">{{ blog3.title }}</a></h2>
+                                <div class="showDateBox">
+                                    <p>By: <span>{{ blog3.author }}</p>
+                                    <p>Date: <span>{{ blog3.created_at | date: "%B %d, %Y" }}</span></p>
+                                </div>
+                                <p>{{ blog3.content | strip_html }}</p>                            
+                                <div class="readMore">
+                                    <a href="{{ blog3.url }}" class="blogBtn">Read More</a>
+                                </div>
+                            </div>
+                        {% else %}
+                            <div class="mainRecentBoxImg">
+                                <img src="https://cdn.shopify.com/s/files/1/0589/2125/5095/files/istockphoto-1147544807-612x612.jpg?v=1681970148" alt="">
+                            </div>
+                            <div class="mainRecentBoxConetent">
+                                <h2><a href="#">Title</a></h2>
+                                <div class="showDateBox">
+                                    <p>By: <span>Auhtor</span></p>
+                                    <p>Date: <span>Date Time</span></p>
+                                </div>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                            
+                                <div class="readMore">
+                                    <a href="#" class="blogBtn">Read More</a>
+                                </div>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </section>
+    <section class="latestBlogSec">
+        {% assign page_url = nil %}
+        <div class="container">
+<!--             <h2>Latest Recipes</h2>               -->
+            <div class="mainLatestBlog">
+              {% assign all-blogs = "cooking-products,grilling-tips,news,recipes,uncategorized" | split: "," %}
+                 {% for handle in all-blogs %}
+                   {%- paginate  blogs[handle].articles by 5 -%}
+                      {% for article in blogs[handle].articles %}                
+                               <div class="mainLatestBlogBox">
+                                <div class="latestBlogImg">
+                                    <img src="{{ article.image  | img_url:"600x"}}" alt="">
+                                 
+                                </div>
+                                <div class="latestBlogContent">
+            <!--                         <h2>{{ article.title }}</h2> -->
+                                  <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
+                                    <div class="showDateBox">
+                                        <p>By: <span>{{ article.author }}</span></p>
+                                        <p>Date: <span>{{ article.created_at | date: "%B %d, %Y" }}</span></p>
+                                    </div>
+                                    <p>{{ article.content | strip_html  }}</p>
+                                    <div class="latestBoxBtn">
+                                        <a href="{{ article.url }}" class="blogBtn">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                          {% endfor %}
+                     {%- if paginate.next -%}
+                       {% assign page_url = paginate.next.url %}
+                       {% endif %}
+                     {%- endpaginate -%}
+             {% endfor %}
+            </div>
+            {% if page_url %}
+            <div class="loadMoreBtn">
+                <button data-url="{{ page_url }}" class="blogBtn">LOAD MORE</button>
+            </div>
+            {% endif %}
+            <div id="loadMoreSpinner" style="display:none">
+              <div class="searchLoader"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Before Footer Des -->
+    <section class="footerDesSec">
+        <div class="container">
+            <div class="footerDesc">
+                <h2>{{ section.settings.blog_footer_txt }}</h2>
+            </div>
+        </div>
+    </section>
+
+    <script>
+      let LoadMoreBtn = document.querySelector('.loadMoreBtn button');
+function ShowSpinner(){
+  let spinner = document.querySelector('#loadMoreSpinner');
+  if(spinner){
+    spinner.style.display = 'block'
+  }
+}
+function HideSpinner(){
+  let spinner = document.querySelector('#loadMoreSpinner');
+  if(spinner){
+    spinner.style.display = 'none'
+  }
+}
+
+if(LoadMoreBtn){
+  LoadMoreBtn.addEventListener('click', async ()=>{
+    LoadMoreBtn.parentElement.style.display = 'none'
+    let url = LoadMoreBtn.getAttribute('data-url');
+    if(!url) return;
+    ShowSpinner();
+    let res = await fetch(url);
+    // let res = await fetch(url + '&preview_key=510ce3de3bce82f4562264a98d899e6a');
+    let text = await res.text();
+
+    let div = document.createElement('div');
+    div.innerHTML = text;
+
+    let newBlogs = div.querySelector('.mainLatestBlog').innerHTML;
+    document.querySelector('.mainLatestBlog').innerHTML = document.querySelector('.mainLatestBlog').innerHTML + newBlogs;
+    let updatedUrl = div.querySelector('.loadMoreBtn button') ? div.querySelector('.loadMoreBtn button').getAttribute('data-url') : null;
+    if(updatedUrl){
+      LoadMoreBtn.setAttribute('data-url', updatedUrl);
+      LoadMoreBtn.parentElement.style.display = 'block'
+    }
+    HideSpinner()
+  })
+}
+
+let searchBtn = document.querySelector('.serachBoxInp button');
+let searchForm = document.querySelector('#blog-search-form')
+let preValue = null;
+if(searchForm){
+  searchForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    let value = document.querySelector('.serachBoxInp input').value;
+    let searchDropDown = document.querySelector('.searchDropDownArea');
+    if(!value || value == ''){
+      if(searchDropDown.classList.contains('active')){
+        searchDropDown.classList.remove('active')
+      }
+      return;
+    }
+    if(value == preValue){
+      if(!searchDropDown.classList.contains('active')){
+        searchDropDown.classList.add('active')
+      }
+      return ;
+    }
+    preValue = value;
+    if(!searchDropDown.classList.contains('active')){
+      searchDropDown.classList.add('active')
+    }
+    searchDropDown.querySelector('ul').innerHTML = `<li class="searchLoaderArea">
+      <div class="searchLoader"></div>
+    </li>`;
+
+    let res = await fetch(`/search/suggest.json?q=${value}&resources[type]=article`)
+    let data = await res.json()
+    if(data.resources && data.resources.results && data.resources.results.articles){
+      if(data.resources.results.articles.length == 0){
+        // Sorry, we couldn't find any posts. Please try a different search.
+        searchDropDown.querySelector('ul').innerHTML = `<li>
+          <div class="noDataTxt">
+            <p>Sorry, we couldn't find any articles. Please try a different search.</p>
+          </div>
+        </li>`
+      }else{
+        let html = '';
+        data.resources.results.articles.forEach(article=>{
+          let div = document.createElement('div');
+          div.innerHTML = article.body;
+
+          html += `<li>
+            <a href="${article.url}">
+              <div class="searchThumbImg">
+                <img src="${article.featured_image.url}" alt="${article.alt}">
+              </div>
+              <div class="searchTxtBlock">
+                <h4>${article.title}</h4>
+                <p>${div.innerText}</p>
+              </div>
+            </a>
+          </li>`
+        })
+        searchDropDown.querySelector('ul').innerHTML = html
+      }
+    }
+
+    console.log(value);
+  })
+  document.addEventListener('click', (e)=>{
+    let searchDropDown = document.querySelector('.searchDropDownArea');
+    let searchInput = document.querySelector('.serachBoxInp input')
+    const isClickInside = searchDropDown.contains(e.target) || searchBtn.contains(e.target) || searchInput.contains(e.target);
+    if (!isClickInside) {
+      if(searchDropDown.classList.contains('active')){
+        searchDropDown.classList.remove('active')
+      }
+    }
+  })
+}
+    </script>
+
+
+{% schema %}
+  {
+     "name": "Blog posts",
+     "class": "index-section",
+    "settings": [
+        {
+      "id" : "background_image",
+      "type" : "image_picker",
+      "label":"Select Image"
+    },
+       {
+        "id":"Recipe_more",
+        "type":"text",
+        "label":"Title",
+        "default":"RECIPE & MORE"
+      },
+      {
+        "id":"subtitle",
+        "type":"textarea",
+        "label":"Subtitle",
+        "default":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam viverra, tellus at dictum vestibulum, felis elit pharetra sem, non auctor velit ante vel diam. Donec mollis ullamcorper tortor non rutrum"
+      },
+      {
+         "id": "blog",
+          "type": "article",
+          "label": "Feature Blog 1"
+      },
+      {
+           "id":"blog_2",
+           "type": "article",
+           "label": "Feature Blog 2"
+      },
+         {
+           "id":"blog_3",
+            "type": "article",
+           "label": "Feature Blog 3"
+      },
+      {
+       "id":"blog_footer_txt",
+        "type": "text",
+       "label": "Page Bottom Banner Text",
+        "default":"Some Of The Best Kitchen Knives In The Game, Created By Jack Mancuso. Check Out The New Damascus Steel Chef Knife And Cleaver, Sure To Wow The Crowd And Cut Through Just About Anything In The Kitchen."
+      }
+      
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

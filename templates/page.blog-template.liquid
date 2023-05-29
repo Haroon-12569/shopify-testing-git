@@ -1,0 +1,568 @@
+<style>
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+/*     font-family: 'Chivo', sans-serif; */
+    font-family: "Neuzeit Office", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden!important;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Neuzeit Office Soft Rounded", sans-serif;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.container{
+    max-width: 1610px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+.blogBtn{
+    font-family: "Neuzeit Office", sans-serif;
+    background-color: #cc2000;
+    border: 1px solid transparent;
+    padding: 16px 50px;
+    color: #f8f8f8;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 50px;
+    text-transform: uppercase;
+    display: inline-block;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.blogBtn:hover{
+    background-color: transparent;
+    border: 1px solid #cc2000;
+    color: #cc2000;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+/* Main Banner Css */
+.mainBannerBlog{
+    padding-top: 97px;
+    background-image: url('./assets/bannerImg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    max-height: 636px;
+    margin-bottom: 350px;
+}
+.receipeMore{
+    width: 758px;
+    margin: 0 auto;
+    margin-bottom: 70px;    
+}
+.receipeMoreHeading{
+    margin-bottom: 43px;
+}
+.receipeMoreHeading h1{
+    font-size: 45px;
+    font-weight: bold;
+    color: #FFFFFF; 
+    margin-bottom: 17px;
+    padding: 0px;
+    text-align: center;
+}
+.receipeMoreHeading p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF; 
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.serachBoxInp{
+    position: relative;
+}
+.serachBoxInp input{
+    font-family: "Neuzeit Office", sans-serif;
+    width: 100%;
+    border-radius: 50px;
+    padding: 23px 182px 23px 25px;
+    font-size: 14px;
+    color: #A4A4A4;
+    font-style: italic;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border: 1px solid white;    
+}
+.serachBoxInp button{    
+    position: absolute;
+    top: 6px;
+    right: 6px;
+}
+.mainRecentparent{
+    display: flex;
+    justify-content: space-between;
+/*     align-items: center; */
+}
+.mainRecentLeft{
+    width: 781px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px 0px #00000042;
+    overflow: hidden;
+}
+.mainRecentImg{
+    width: 100%;
+    height: 364px;    
+}
+.mainRecentImg img{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;   
+}
+.mainRecentContent{
+    padding: 18px 15px;
+}
+.mainRecentContent h2{
+    font-size: 45px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mainRecentContent .showDateBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 337px;  
+    margin-bottom: 12px; 
+}
+.mainRecentContent .showDateBox p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 0px;
+    padding: 0px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3 ;
+    -webkit-box-orient: vertical;
+}
+.mainRecentContent .showDateBox p span{    
+    font-weight: 600;    
+}
+.mainRecentContent p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 34px;
+    padding: 0px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.readMore{    
+    text-align: right;
+}
+.mainRecentRight{
+    width:781px;
+}
+.mainRecentBox{
+    display: flex;      
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px 0px #00000042;
+    margin-bottom: 18px;
+    overflow: hidden;
+    height: 352.97px;
+}
+.mainRecentBox:nth-last-child(1){    
+    margin-bottom: 0px;
+}
+.mainRecentBoxImg{
+    width: 35%;
+    height: 100%;
+}
+.mainRecentBoxImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mainRecentBoxConetent{
+    padding: 36px 16px 20px 16px;
+    width: 65%;
+}
+.mainRecentBoxConetent h2{
+    font-size:45px;
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.mainRecentBoxConetent .showDateBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 53px;    
+    margin-bottom: 29px;
+}
+.mainRecentBoxConetent .showDateBox p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;    
+    padding: 0px;
+    margin-bottom: 0px;
+}
+.mainRecentBoxConetent .showDateBox p span{    
+    font-weight: 600;        
+}
+.mainRecentBoxConetent p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 37px;
+    padding: 0px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* Banner End */
+/* Latest Blog */
+.latestBlogSec{
+    padding: 200px 0px;
+}
+.latestBlogSec h2{
+    font-size: 45px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 38px;        
+}
+.mainLatestBlog{
+    display: flex;    
+    align-items: stretch;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 75px;
+}
+.mainLatestBlogBox{
+    background-color: white;    
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px 0px #00000042;
+    overflow: hidden;
+}
+.latestBlogImg{
+    width: 100%;
+    height: 297px;
+}
+.latestBlogImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.latestBlogContent{
+    padding: 14px 11px 30px 11px;
+}
+.latestBlogContent h2{    
+    font-size: 45px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 15px;  
+}
+.latestBlogContent .showDateBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+/*     padding-right: 158px; */
+    margin-bottom: 18px;
+}
+.latestBlogContent .showDateBox p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+.latestBlogContent .showDateBox p span{
+    font-weight: 600;
+}
+.latestBlogContent p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 49px;
+    padding: 0px;
+    display: -webkit-box;    
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.latestBoxBtn{
+    text-align: center;    
+}
+.loadMoreBtn{
+    text-align: center;
+}
+.loadMoreBtn button{    
+    font-size: 20px;
+    padding: 13px 135px;
+    cursor: pointer;    
+    background-color: transparent;
+    border: 1px solid #cc2000;
+    color: #cc2000;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+/* Latest Blog End */
+.footerDesSec{
+    padding: 50px 0px;
+    background-color:#cc2000;
+}
+.footerDesc h2{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 600;
+    text-transform: uppercase;    
+}
+
+  
+  
+/* responsiveness */
+/* ipad pro */
+@media (max-width:1024px) {
+    .mainBannerBlog {                
+        margin-bottom: 300px;
+    }
+    .mainRecentLeft {
+        width: 49%;        
+    }
+    .mainRecentRight {
+        width: 49%;
+    }
+    .mainRecentImg {        
+        height: 300px;
+    }
+    .mainRecentContent h2 {
+        font-size: 32px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;        
+    }
+    .mainRecentContent .showDateBox {        
+        padding-right: 101px;        
+    }
+    .mainRecentBoxImg {
+        width: 35%;                   
+        height: 253px;               
+    }
+    .mainRecentBoxConetent {
+        padding: 14px;        
+    }
+    .mainRecentBoxConetent h2 {
+        font-size: 32px;    
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;    
+    }
+    .mainRecentBoxConetent p {        
+        margin-bottom: 49px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .mainRecentBoxConetent .showDateBox {        
+        padding-right: 0px;
+        margin-bottom: 15px;
+    }
+    .mainRecentContent .showDateBox p {
+        font-size: 15px;
+        width: 50%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;  
+    }
+    .mainRecentContent p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    }
+    .blogBtn {        
+        padding: 12px 40px;        
+        font-size: 14px;        
+    }
+    .serachBoxInp input {
+        padding: 17px 159px 20px 25px;
+    }
+    .mainRecentBoxConetent .showDateBox p {
+        font-size: 15px;        
+        width: 50%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .latestBlogSec {
+        padding: 40px 0px;
+    }
+    .latestBlogSec h2 {
+        font-size: 32px;       
+        margin-bottom: 20px;
+    }
+    .mainLatestBlogBox {       
+        width: 32%;        
+    }
+    .latestBlogImg {        
+        height: 200px;
+    }
+    .latestBlogContent h2 {
+        font-size: 32px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;       
+    }
+    .latestBlogContent .showDateBox p {
+        font-size: 15px;
+        width: 50%;
+        padding: 0px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;  
+    }
+    .latestBlogContent .showDateBox {        
+        padding-right: 0px;
+    }
+    .latestBlogContent p {
+        margin-bottom: 30px;
+        padding: 0px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+    .latestBlogContent {
+        padding: 14px 11px;
+    }
+    .mainLatestBlog {        
+        gap: 19px;        
+        margin-bottom: 50px;
+    }
+    .footerDesSec {
+        padding: 40px 0px;       
+    }
+    .footerDesc h2 {       
+        font-size: 20px;        
+    }
+}
+/* ipad */
+@media (max-width:991px){
+    .container{
+        max-width:100%;
+        padding: 0px 15px;
+    }
+    .receipeMore {
+        width: 100%;        
+        margin-bottom: 35px;
+    }
+    .receipeMoreHeading {
+        margin-bottom: 30px;
+    }
+    .receipeMoreHeading h1 {
+        font-size: 32px;
+    }
+    .mainBannerBlog {                
+        max-height: 538px;
+        margin-bottom: 230px;
+    }
+    .mainRecentImg {
+        height: 240px;
+    }
+    .mainRecentContent h2 {
+        font-size: 26px;        
+    }
+    .mainRecentContent .showDateBox {
+        padding-right: 0px;
+    }
+    .mainRecentBoxConetent h2 {
+        font-size: 26px;       
+    }
+    .mainRecentBoxConetent p {
+        margin-bottom: 24px;
+    }
+    .mainRecentparent {        
+        align-items: flex-start;
+    }
+    .mainRecentBoxImg {
+        width: 35%;
+        height: 220px;
+    }
+    .mainRecentBoxConetent .showDateBox p {        
+        width: 46%;  
+    }
+    .mainLatestBlogBox {
+        width: 48%;
+    }
+    .latestBlogContent h2 {
+        font-size: 26px;        
+    }
+}
+/* mobile Screen */
+@media (max-width:767px){
+    .mainRecentparent {                
+        flex-wrap: wrap;
+    }
+    .mainRecentLeft {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .mainRecentRight {
+        width: 100%;
+    }
+    .mainBannerBlog {
+        max-height: 938px;
+        margin-bottom: 370px;
+    }
+    .latestBlogSec {
+        padding: 20px 0px;
+    }
+    .mainLatestBlogBox {
+        width: 100%;
+    }
+    .loadMoreBtn button {
+        font-size: 16px;
+        padding: 8px 100px;     
+        width: 100%;   
+    }
+    .mainLatestBlog {
+        gap: 19px;
+        margin-bottom: 30px;
+    }
+    .footerDesc h2 {
+        font-size: 15px;
+    }
+}
+
+</style>
+ <!-- banner done -->
+  {% section 'all-blog-section' %}
+    <!-- Latest Blog -->
+    

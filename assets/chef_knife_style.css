@@ -1,0 +1,1069 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+/*     font-family: 'Chivo', sans-serif; */
+    font-family: "Neuzeit Office", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden!important;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Neuzeit Office Soft Rounded", sans-serif;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.container{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+.mainThemeBtn{
+    font-family: "Neuzeit Office", sans-serif;
+    background-color: #cc2000;
+    border: 1px solid transparent;
+/*     border-radius: 10px; */
+    padding: 10px 35px;
+    color: #f8f8f8;
+    font-size: 20px;
+    font-weight: 400;
+    display: inline-block;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.mainThemeBtn:hover{
+    background-color: #f8f8f8;
+    border: 1px solid #cc2000;
+    color: #cc2000;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Banner Css Start Here */
+
+.mainBanner{
+    padding: 123px 0px 78px;
+    position: relative;
+    background-color: #000000;
+}
+.bannerFlexBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bannerTxtColumn{
+    width: 489px;
+}
+.bannerImgColumn{
+    width: 589px;
+    /* height: 522.75px; */
+}
+.subHeading{
+    background-color: #CF2001;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 3px 20px;
+}
+.TxtBlock h1{
+    font-size: 72px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.TxtBlock p{
+    font-size: 18px;
+    color: #fff;
+    line-height: normal;
+    font-weight: 400;
+    margin-bottom: 45px;
+}
+.subHeading p{
+    font-size: 18px;
+    color: #fff;
+    line-height: normal;
+    font-weight: 400;
+    margin-bottom: 0px !important;
+}
+.bannerImgColumn img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.scrollBtn{
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.scrollBtn a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #D45035;
+    padding: 5px;
+    border-radius: 50%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.scrollBtn a svg{
+    width: 14.786px;
+    height: 18.765px;
+}
+.scrollBtn a:hover{
+    background-color: #D45035;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+@keyframes bounce {
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Banner Css End Here */
+
+/* Some Feature of Knife Css Start Here */
+
+.someFeature{
+    padding: 66px 0px 70px;
+    background: #fff;
+}
+.sectionTitle{
+    text-align: center;
+    margin-bottom: 72px;
+}
+.sectionTitle h2{
+    font-size: 31.5px;
+    margin-bottom: 11px;
+    color: #2E2A39;
+    font-weight: 400;
+}
+.sectionTitle p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #929292;
+    margin-bottom: 0px;
+}
+.lineBar{
+    display: inline-block;
+    width: 72px;
+    background-color: #D45035;
+    height: 3px;
+}
+.knifeFeatureRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.knifeFeatureCol{
+    width: 292px;
+}
+.knifeFeatureList{
+    margin-bottom: 33px;
+}
+.knifeFeatureList h3{
+    font-size: 24px;
+    color: #2E2A39;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+.knifeFeatureList p{
+    font-size: 16px;
+    color: #929292;
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+.knifeFeatureImg{
+    width: 481px;
+    height: 601px;
+}
+.knifeFeatureImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.knifeFeatureRow{
+    margin-bottom: 33.5px;
+}
+.knifeFeatureBtn{
+    text-align: center;
+}
+/* Some Feature of Knife Css End Here */
+
+
+/* 6 in. chef knife Css Start Here */
+
+.chefKnife{
+    padding: 89px 0px 92px;
+    position: relative;
+    background: rgb(242,237,228);
+    background: -moz-linear-gradient(45deg,  rgba(242,237,228,1) 0%, rgba(240,241,232,1) 100%);
+    background: -webkit-linear-gradient(45deg,  rgba(242,237,228,1) 0%,rgba(240,241,232,1) 100%);
+    background: linear-gradient(45deg,  rgba(242,237,228,1) 0%,rgba(240,241,232,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ede4', endColorstr='#f0f1e8',GradientType=1 );
+}
+.chefKnifeTxt{
+    width: 505px;
+}
+.chefKnifeTxt .sectionTitle{
+    text-align: left;
+    margin-bottom: 24px;
+}
+.chefKnifeTxt .sectionTitle h2{
+    margin-bottom: 5px;
+}
+.chefKnifeTxt p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #929292;
+    margin-bottom: 25px;
+}
+.chefKnifeTxt p span{
+    color: #2E2A39;
+    display: block;
+    font-style: italic;
+    margin-top: 20px;
+}
+.specificationsList h4{
+    font-size: 16px;
+    font-weight: 600;
+    color: #2E2A39;
+    margin-bottom: 25px;
+}
+.specificationsList ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 44px;
+}
+.specificationsList ul li{
+    font-size: 16px;
+    font-weight: 400;
+    color: #929292;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 30px;
+}
+.specificationsList ul li::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    background-color: #D45035;
+    transform: translate(0%, -50%);
+}
+.sectionVideoBlock{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.sectionVideoBlock img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sectionVideoBlock a{
+    width: 107px;
+    height: 107px;
+    background-color: #CF2001;
+    border-radius: 50%;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    right: 0px;
+    transform: translate(0%, -50%);
+    box-shadow: 0 8px 5px rgb(60 60 60 / 36%);
+    margin: 0 auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.sectionVideoBlock a:hover{
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #af2c14;
+}
+.sectionVideoBlock a svg{
+    margin-left: 10px;
+}
+
+/* 6 in. chef knife Css End Here */
+
+/* CUSO CUTS STAINLESS STEEL 6'' in CHEF KNIFE Css Start Here */
+
+.stainlessBlock{
+    padding: 80px 0px 0px;
+    background: #fff;
+}
+.stainlessRow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 72.5px;
+    border-bottom: 1px solid #D8D8D8;
+}
+.stainlessImgCol{
+    width: 483px;
+    height: 641px;
+    position: relative;
+    z-index: 0;
+}
+.imgBorderLayer{
+    width: 434px;
+    height: 594px;
+    border: 2px solid #D45035;
+    border-radius: 20px;
+    display: block !important;
+}
+.imgFillLayer{
+    width: 434px;
+    height: 594px;
+    background-color: #2E2A39;
+    border-radius: 20px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    display: block !important;
+}
+.mainImgBlock{
+    width: 434px;
+    height: 594px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    left: 0px;
+    margin: 0 auto;
+    z-index: 9;
+    transform: translate(0%, -50%);
+}
+.mainImgBlock img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.stainlessTxtCol{
+    width: 614px;
+    padding-right: 66px;
+}
+.stainlessTxtCol .chefKnifeTxt{
+    width: 100%;
+}
+
+/* CUSO CUTS STAINLESS STEEL 6'' in CHEF KNIFE Css End Here */
+
+/* Product Gallery Css Start Here */
+
+.productGallery{
+    padding: 65.5px 0px 70px;
+    background: #fff;
+}
+.productGallery .sectionTitle{
+    margin-bottom: 57px;
+}
+.galleryItemRow{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -8px;
+    margin-bottom: 57px;
+}
+.galleryItem{
+    width: 25%;
+    padding: 0px 8px;
+}
+.productGalleryImg a{
+    display: block;
+    width: 100%;
+    height: 332px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 5px 8px 10px rgb(60 60 60 / 27%);
+}
+.productGalleryImg a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.galleryItemRow .galleryItem:nth-child(odd){
+    padding-top: 50px;
+}
+
+/* Product Gallery Css End Here */
+
+/* Our Promise Css Start Here */
+
+.ourPromise{
+    padding: 0px 0px 70px;
+}
+.promiseGrayBox{
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 45px 60px 36px;
+}
+.promiseRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.promiseColumn{
+    width: 280px;
+}
+.promiseIcon{
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.promiseIcon img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.promiseTxt{
+    text-align: center;
+}
+.promiseTxt h4{
+    font-size: 24px;
+    color: #2E2A39;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+.promiseTxt p{
+    font-size: 16px;
+    margin-bottom: 0px;
+    color: #929292;
+    font-weight: 400;
+}
+
+/* Our Promise Css End Here */
+
+.mainPopupblock{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.showVideo .mainPopupblock{
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.popupBlacklayer{
+  background: #00000080;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: block !important;
+}
+.popupWhiteBox{
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  right: 0px;
+  transform: translate(0%, -50%);
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  height: 72%;
+}
+.popupWhiteBox iframe{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.popupWhiteBox button{
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  padding: 0px;
+  position: absolute;
+  top: -50px;
+  right: 0px;
+  cursor: pointer;
+  z-index: 99;
+}
+.popupWhiteBox button svg{
+  width: 100%;
+  height: 100%;
+}
+/* Responsive Css Start Here */
+
+@media screen and (max-width: 1230px) and (min-width: 1101px){
+    .container {
+        max-width: 991px;
+    }
+    .mainBanner {
+        padding: 80px 0px 80px;
+    }
+    .bannerImgColumn {
+        width: 430px;
+    }
+    .TxtBlock h1 {
+        font-size: 40px;
+    }    
+    .subHeading {
+        margin-bottom: 10px;
+    }
+    .TxtBlock p {
+        margin-bottom: 20px;
+    }
+    .mainThemeBtn {
+        padding: 10px 36px;
+        font-size: 18px;
+    }
+    .bannerTxtColumn {
+        width: 370px;
+    }
+    .knifeFeatureList h3 {
+        font-size: 20px;
+    }
+    .knifeFeatureList p {
+        font-size: 14px;
+    }
+    .knifeFeatureCol {
+        width: 237px;
+    }
+    .knifeFeatureImg {
+        width: 420px;
+    }
+    .chefKnifeTxt {
+        width: 445px;
+    }
+    .chefKnifeTxt p {
+        font-size: 14px;
+    }
+    .sectionTitle h2 {
+        font-size: 26px;
+        margin-bottom: 7px;
+    }
+    .sectionTitle {
+        margin-bottom: 20px;
+    }
+    .specificationsList ul li {
+        font-size: 14px;
+    }
+    .specificationsList ul li::after {
+        width: 6px;
+        height: 6px;
+    }
+    .stainlessImgCol {
+        width: 395px;
+        height: 540px;
+    }
+    .imgBorderLayer, .imgFillLayer, .mainImgBlock {
+        width: 340px;
+        height: 500px;
+    }
+    .stainlessTxtCol {
+        width: 475px;
+        padding-right: 0;
+    }
+    .promiseGrayBox {
+        padding: 36px 36px 36px;
+    }
+    .promiseColumn {
+        width: 270px;
+    }
+    .promiseTxt h4 {
+        font-size: 20px;
+    }
+    .promiseTxt p {
+        font-size: 14px;
+    }
+  .popupWhiteBox {
+      max-width: 950px;
+      height: 39%;
+    }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 1025px){
+    .container {
+        max-width: 991px;
+    }
+    .mainBanner {
+        padding: 80px 0px 80px;
+    }
+    .bannerImgColumn {
+        width: 430px;
+    }
+    .TxtBlock h1 {
+        font-size: 40px;
+    }    
+    .subHeading {
+        margin-bottom: 10px;
+    }
+    .TxtBlock p {
+        margin-bottom: 20px;
+    }
+    .mainThemeBtn {
+        padding: 10px 36px;
+        font-size: 18px;
+    }
+    .bannerTxtColumn {
+        width: 370px;
+    }
+    .knifeFeatureList h3 {
+        font-size: 20px;
+    }
+    .knifeFeatureList p {
+        font-size: 14px;
+    }
+    .knifeFeatureCol {
+        width: 237px;
+    }
+    .knifeFeatureImg {
+        width: 420px;
+    }
+    .chefKnifeTxt {
+        width: 445px;
+    }
+    .chefKnifeTxt p {
+        font-size: 14px;
+    }
+    .sectionTitle h2 {
+        font-size: 26px;
+        margin-bottom: 7px;
+    }
+    .sectionTitle {
+        margin-bottom: 20px;
+    }
+    .specificationsList ul li {
+        font-size: 14px;
+    }
+    .specificationsList ul li::after {
+        width: 6px;
+        height: 6px;
+    }
+    .stainlessImgCol {
+        width: 395px;
+        height: 540px;
+    }
+    .imgBorderLayer, .imgFillLayer, .mainImgBlock {
+        width: 340px;
+        height: 500px;
+    }
+    .stainlessTxtCol {
+        width: 475px;
+        padding-right: 0;
+    }
+    .promiseGrayBox {
+        padding: 36px 36px 36px;
+    }
+    .promiseColumn {
+        width: 270px;
+    }
+    .promiseTxt h4 {
+        font-size: 20px;
+    }
+    .promiseTxt p {
+        font-size: 14px;
+    }
+  .popupWhiteBox {
+      max-width: 950px;
+      height: 39%;
+    }
+}
+
+@media(max-width: 1024px){
+    .container {
+        max-width: 991px;
+    }
+    .mainBanner {
+        padding: 80px 0px 80px;
+    }
+    .bannerImgColumn {
+        width: 430px;
+    }
+    .TxtBlock h1 {
+        font-size: 40px;
+    }    
+    .subHeading {
+        margin-bottom: 10px;
+    }
+    .TxtBlock p {
+        margin-bottom: 20px;
+    }
+    .mainThemeBtn {
+        padding: 10px 36px;
+        font-size: 18px;
+    }
+    .bannerTxtColumn {
+        width: 370px;
+    }
+    .knifeFeatureList h3 {
+        font-size: 20px;
+    }
+    .knifeFeatureList p {
+        font-size: 14px;
+    }
+    .knifeFeatureCol {
+        width: 237px;
+    }
+    .knifeFeatureImg {
+        width: 420px;
+    }
+    .chefKnifeTxt {
+        width: 445px;
+    }
+    .chefKnifeTxt p {
+        font-size: 14px;
+    }
+    .sectionTitle h2 {
+        font-size: 26px;
+        margin-bottom: 7px;
+    }
+    .sectionTitle {
+        margin-bottom: 20px;
+    }
+    .specificationsList ul li {
+        font-size: 14px;
+    }
+    .specificationsList ul li::after {
+        width: 6px;
+        height: 6px;
+    }
+    .stainlessImgCol {
+        width: 395px;
+        height: 540px;
+    }
+    .imgBorderLayer, .imgFillLayer, .mainImgBlock {
+        width: 340px;
+        height: 500px;
+    }
+    .stainlessTxtCol {
+        width: 475px;
+        padding-right: 0;
+    }
+    .promiseGrayBox {
+        padding: 36px 36px 36px;
+    }
+    .promiseColumn {
+        width: 270px;
+    }
+    .promiseTxt h4 {
+        font-size: 20px;
+    }
+    .promiseTxt p {
+        font-size: 14px;
+    }
+    .popupWhiteBox {
+      max-width: 950px;
+      height: 39%;
+    }
+}
+
+@media(max-width: 991px){
+    .container {
+        max-width: 100%;
+    }
+    .bannerImgColumn {
+        width: 50%;
+    }
+    .bannerTxtColumn {
+        width: 50%;
+        padding-right: 20px;
+    }
+    .subHeading {
+        border-radius: 7px;
+    }
+    .subHeading p {
+        font-size: 16px;
+    }
+    .TxtBlock h1 {
+        font-size: 35px;
+    }
+    .TxtBlock p {
+        font-size: 16px;
+    }
+    .mainThemeBtn {
+        padding: 9px 29px;
+        font-size: 16px;
+        border-radius: 7px;
+    }
+    .sectionTitle h2 {
+        font-size: 22px;
+    }
+    .knifeFeatureImg {
+        width: 40%;
+        height: 400px;
+    }
+    .knifeFeatureList h3 {
+        font-size: 18px;
+    }
+    .knifeFeatureList p {
+        font-size: 12px;
+    }
+    .knifeFeatureCol {
+        width: 28%;
+    }
+    .someFeature{
+        padding: 70px 0px;
+    }
+    .chefKnifeTxt {
+        width: 100%;
+    }
+    .chefKnife{
+        padding-top: 70px;
+        padding-bottom: 0px;
+    }
+    .sectionVideoBlock{
+        width: 100%;
+        position: relative;
+        margin-top: 50px;
+        height: 500px;
+    }
+    .sectionVideoBlock a {
+        width: 87px;
+        height: 87px;
+    }
+    .galleryItemRow .galleryItem:nth-child(odd) {
+        padding-top: 30px;
+    }
+    .galleryItem {
+        width: 50%;
+        padding: 0px 15px;
+    }
+    .galleryItemRow{
+        margin: 0px -15px;
+        margin-bottom: 50px;
+    }
+    .stainlessImgCol {
+        width: 50%;
+        height: 500px;
+    }
+    .stainlessTxtCol {
+        width: 50%;
+        padding-right: 0;
+        padding-left: 20px;
+    }
+    .imgBorderLayer, .imgFillLayer, .mainImgBlock {
+        width: 88%;
+        height: 88%;
+    }
+    .promiseColumn {
+        width: 32%;
+    }
+    .promiseTxt h4 {
+        font-size: 18px;
+    }
+    .promiseTxt p {
+        font-size: 12px;
+    }
+    .popupWhiteBox {
+      max-width: 708px;
+    }
+}
+
+@media(max-width: 767px){
+    .bannerFlexBox{
+        flex-wrap: wrap;
+    }
+    .bannerTxtColumn {
+        width: 100%;
+        padding-right: 0;
+    }
+    .bannerImgColumn {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .TxtBlock h1 {
+        font-size: 30px;
+    }
+    .TxtBlock p {
+        font-size: 15px;
+    }
+    .mainThemeBtn {
+        padding: 9px 25px;
+        font-size: 12px;
+    }
+    .knifeFeatureRow{
+        flex-wrap: wrap;
+    }
+    .knifeFeatureCol {
+        width: 100%;
+        text-align: left !important;
+    }
+    .knifeFeatureImg {
+        width: 100%;
+        height: 160px;
+    }
+    .sectionTitle {
+        margin-bottom: 50px;
+    }
+    .knifeFeatureList h3 {
+        font-size: 16px;
+    }
+    .knifeFeatureList p {
+        font-size: 13px;
+    }
+    .knifeFeatureList {
+        margin-bottom: 30px;
+    }
+    .sectionVideoBlock a {
+        width: 55px;
+        height: 55px;
+    }
+    .sectionVideoBlock a svg {
+        margin-left: 6px;
+        width: 20px;
+        height: 20px;
+    }
+    .chefKnife {
+        padding-top: 60px;
+    }
+    .chefKnifeTxt p {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    .specificationsList h4 {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .specificationsList ul li {
+        padding-left: 15px;
+    }
+    .specificationsList ul li::after {
+        left: 3px;
+    }
+    .chefKnifeTxt .sectionTitle {
+        margin-bottom: 15px;
+    }
+    .specificationsList ul {
+        margin-bottom: 25px;
+    }
+    .stainlessRow{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .stainlessTxtCol {
+        width: 100%;
+        padding-left: 0;
+    }
+    .stainlessImgCol {
+        width: 100%;
+        height: 480px;
+        margin-top: 50px;
+    }
+    .sectionTitle h2 {
+        font-size: 19px;
+    }
+    .sectionTitle h2 br{
+        display: none !important;
+    }
+    .stainlessBlock .chefKnifeTxt a{
+        margin-top: 20px;
+    }
+    .galleryItem{
+        width: 100%;
+    }
+    .galleryItemRow .galleryItem:nth-child(odd){
+        padding: 0px;
+    }
+    .galleryItemRow .galleryItem{
+        padding: 0px 15px !important;
+        margin-bottom: 15px;
+    }
+    .productGalleryImg a {
+        height: 200px;
+        box-shadow: 5px 8px 10px rgb(60 60 60 / 14%);
+    }
+    .promiseRow{
+        flex-wrap: wrap;
+    }
+    .promiseColumn {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .promiseRow .promiseColumn:nth-last-child(1){
+        margin-bottom: 0px;
+    }
+    .promiseTxt p {
+        font-size: 13px;
+    }
+    .promiseTxt h4 {
+        font-size: 16px;
+    }
+    .popupWhiteBox {
+      max-width: 95%;
+      background: transparent;
+      height: 300px;
+    }
+    .knifeFeatureList.mBottomScreen{
+      margin-bottom: 0px;
+    }
+    .knifeFeatureImg img {
+      object-fit: cover;
+    }
+     #specials .shopify-section.featured-products-wrapper .homepage-sections-wrapper{
+      padding:25px 0px !important;
+    }
+    #specials .grid-view-item .grid-view-item-image{
+     border: 1px solid #dbd6d6 !important;
+  }
+}
+
+/* Responsive Css End Here */

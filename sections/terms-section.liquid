@@ -1,0 +1,49 @@
+<section class="privacySection">
+  <div class="wrapper-padded">
+    <div class="mainTitleBlock">
+      <h3>{{ section.settings.term_heading }}</h3>
+    </div>
+    <div>
+      {{ section.settings.content }}
+    </div>
+  </div>
+</section>
+
+<style>
+  .mainTitleBlock{
+    text-align: center;
+    margin: 20px 0px;
+  }
+  .mainTitleBlock h3{
+    font-size: 26px;
+    color: #000;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Terms",
+    "settings": [
+      {
+        "type": "text",
+        "id": "term_heading",
+        "label": "Heading",
+        "default": "Terms & Conditions"
+      },
+      {
+        "type": "richtext",
+        "id": "content",
+        "label": "Content"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
